@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'My name is Otto' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+rot13 <<< "Hello there, hi"
