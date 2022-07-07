@@ -1,2 +1,6 @@
 #!/bin/bash
+c
+C
 chmod vincent:staff *
+#!/bin/bash
+chown vicent:staff *
