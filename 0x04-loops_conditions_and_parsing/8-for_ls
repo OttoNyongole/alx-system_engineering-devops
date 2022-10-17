@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Displays the contents of the current directory in list format, Only displays the part of the name after the first dash. 
+#print every in the current directory
 
-files=$(ls)
-for i in $files; do
-  echo "$i" | cut -d '-' -f2
+for i in * ; do
+	echo "${i#*-}"
 done
