@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# print process id and name
+# whose name contain the word bash
+
+pids=$( pgrep bash)
+for i in $pids; do
+	echo "$i bash"
+done
