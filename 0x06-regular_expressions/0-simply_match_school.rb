@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-#Match "School"
+#Match "Holberton"
 puts ARGV[0].scan(/School/).join
