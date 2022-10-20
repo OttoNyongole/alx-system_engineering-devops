@@ -1,1 +1,4 @@
-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
+#!/usr/bin/env bash
+# displays all active IPv4 IPs on the machine
+
+ifconfig | grep -Po 'inet addr:\K\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
