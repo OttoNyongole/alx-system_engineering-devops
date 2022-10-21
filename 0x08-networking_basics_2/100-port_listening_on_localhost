@@ -2,17 +2,4 @@
 # Listening on port 98 on localhost
 # In Terminals
 
-[Terminal 1]
-require "socket"
-s = TCPserver.new("localhost", 98)
-while c = s.accept?
-	c << "pong\n"
-	c.close()
-	done
-
-[Terminal 1]
-require "socket"
-i = telnet localhost 98
-while j = i.accept?
-	j << "connected to localhost.\nHello world\ntest"
-#nc -l localhost 98
+nc -l 98
