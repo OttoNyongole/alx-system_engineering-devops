@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Client configuration file
 Host school
-    HostName 54.172.111.74
+    HostName 100.26.132.16
     User ubuntu
