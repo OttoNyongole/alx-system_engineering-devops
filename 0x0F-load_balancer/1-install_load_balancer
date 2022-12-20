@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Double the number of webservers
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+sudo chmod 777 /etc/haproxy
+sudo chmod 777 /etc/haproxy/haproxy.cfg
+echo "frontend load_balancer
+        bind *:80
+        mode http
+        default_backend web-servers
+    backend web-servers
+        balance roundrobin
+        server 62336-web-01 100.25.194.59:80 check
+        server 62336-web-02 54.159.2.162:80 check" >> /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
