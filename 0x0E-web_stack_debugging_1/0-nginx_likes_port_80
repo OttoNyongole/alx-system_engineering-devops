@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Fixes a bug on a server where nginx is not listening to port 80
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+service nginx restart
